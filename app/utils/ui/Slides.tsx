@@ -4,7 +4,7 @@ export default [
         id:1,
         title:"Gain total control of your money",
         image:require("../../assets/images/first.png"),
-        description:""
+        description:"Become your own money manager and make every cent count"
     },
     {
         id:2,
@@ -16,6 +16,6 @@ export default [
         id:3,
         title:"Planning ahead",
         image:require("../../assets/images/third.png"),
-        description:""
+        description:"Setup your budget for each category so you in control"
     },
 ]

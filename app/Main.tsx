@@ -1,7 +1,7 @@
 import { Text, View, StyleSheet } from 'react-native';
 import { useFonts } from 'expo-font';
 import { NavigationContainer } from '@react-navigation/native';
-import Introduction from './navigation/Introduction';
+import Introduction from './navigation/user/Introduction';
 
 
 export default function Main() {
