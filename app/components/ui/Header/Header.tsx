@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, SafeAreaView } from 'react-native'
 import React from 'react'
 import NotifiactionSvg from '../../../assets/icons/NotifiactionSvg'
 import Colors from '../../../utils/styles/Colors'
@@ -9,6 +9,7 @@ import Global from '../../../utils/styles/Global'
 const Header = () => {
     return (
         <View style={{
+            
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "space-between",

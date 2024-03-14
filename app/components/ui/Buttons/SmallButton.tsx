@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const MonthExpence = () => {
+const SmallButton = () => {
   return (
     <View>
-      <Text>MonthExpence</Text>
+      <Text>SmallButton</Text>
     </View>
   )
 }
 
-export default MonthExpence
+export default SmallButton
