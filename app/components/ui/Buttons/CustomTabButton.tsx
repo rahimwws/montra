@@ -1,6 +1,7 @@
 import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Colors from '../../../utils/styles/Colors'
+import { HandleHapticLight } from '../../../utils/features/HandleHaptic'
 
 const CustomTabButton = ({ children }) => {
     return (
@@ -15,7 +16,10 @@ const CustomTabButton = ({ children }) => {
             // shadowColor:Colors.light,
             // shadowOpacity:1,
             // shadowRadius:0
-        }}>
+        }}
+        onPress={HandleHapticLight}
+        activeOpacity={0.8}>
+        
             <View style={{
                 width: 70,
                 height: 70,

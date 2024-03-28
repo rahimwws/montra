@@ -1,9 +1,9 @@
 import { View, Text } from 'react-native'
 import React, { useState } from 'react'
-import Colors from '../../utils/styles/Colors'
-import LargeInput from '../../components/ui/Inputs/LargeInput'
-import PasswordInput from '../../components/ui/Inputs/PasswordInput'
-import LargeButton from '../../components/ui/Buttons/LargeButton'
+import Colors from '../../../utils/styles/Colors'
+import LargeInput from '../../../components/ui/Inputs/LargeInput'
+import PasswordInput from '../../../components/ui/Inputs/PasswordInput'
+import LargeButton from '../../../components/ui/Buttons/LargeButton'
 import { useNavigation } from '@react-navigation/native'
 import Checkbox from 'expo-checkbox'
 

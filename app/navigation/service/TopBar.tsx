@@ -7,30 +7,30 @@ import Frequency from "../../widgets/Home/Frequency";
 const TopNavigator = createMaterialTopTabNavigator();
 export default function TopNav() {
   return (
-    <TopNavigator.Navigator
-      style={{ minHeight: 240 }}
-      screenOptions={{
-        swipeEnabled: false,
-        tabBarStyle: styles.containerStyle,
-        tabBarIndicatorStyle: styles.indicator,
-        tabBarActiveTintColor: Colors.yellow,
-        tabBarInactiveTintColor: Colors.grey,
-        tabBarContentContainerStyle: {
-          alignItems: "center",
-          justifyContent: "center",
-        },
-        tabBarLabelStyle: {
-          fontFamily: "inter-m",
-          fontSize: 14,
-          textTransform: "none",
-        },
-      }}
-    >
-      <TopNavigator.Screen name="Today" component={Frequency} />
-      <TopNavigator.Screen name="Week" component={Frequency} />
-      <TopNavigator.Screen name="Month" component={Frequency} />
-      <TopNavigator.Screen name="Year" component={Frequency} />
-    </TopNavigator.Navigator>
+      <TopNavigator.Navigator
+        style={{ minHeight: 240 }}
+        screenOptions={{
+          swipeEnabled: false,
+          tabBarStyle: styles.containerStyle,
+          tabBarIndicatorStyle: styles.indicator,
+          tabBarActiveTintColor: Colors.yellow,
+          tabBarInactiveTintColor: Colors.grey,
+          tabBarContentContainerStyle: {
+            alignItems: "center",
+            justifyContent: "center",
+          },
+          tabBarLabelStyle: {
+            fontFamily: "inter-m",
+            fontSize: 14,
+            textTransform: "none",
+          },
+        }}
+      >
+        <TopNavigator.Screen name="Today" component={Frequency} />
+        <TopNavigator.Screen name="Week" component={Frequency} />
+        <TopNavigator.Screen name="Month" component={Frequency} />
+        <TopNavigator.Screen name="Year" component={Frequency} />
+      </TopNavigator.Navigator>
   );
 }
 
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.light,
     width: "auto",
     borderRadius: 50,
-    borderColor: "#FCFCFC",
+    borderColor: "#f1f1fa",
     borderWidth: 1,
     height: 34,
     shadowColor: "#FCEED4",

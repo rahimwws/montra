@@ -3,8 +3,8 @@ import React from 'react'
 import NotifiactionSvg from '../../../assets/icons/NotifiactionSvg'
 import Colors from '../../../utils/styles/Colors'
 import HeaderAva from './HeaderAva'
-import ChangeButton from '../Buttons/ChangeButton'
 import Global from '../../../utils/styles/Global'
+import ChangePills from '../Pills/ChangePills'
 
 const Header = () => {
     return (
@@ -17,7 +17,7 @@ const Header = () => {
             paddingVertical:10
         }}>
             <HeaderAva />
-            <ChangeButton />
+            <ChangePills />
             <NotifiactionSvg color={Colors.violet} />
         </View>
     )

@@ -7,6 +7,10 @@ import UserSvg from "../../assets/icons/UserSvg";
 import Colors from "../../utils/styles/Colors";
 import Plus from "../../assets/icons/Plus";
 import CustomTabButton from "../../components/ui/Buttons/CustomTabButton";
+import Transaction from "../../screens/tabs/Transaction";
+import Budget from "../../screens/tabs/Budget";
+import BudgetStack from "./BudgetStack";
+import ProfileStack from "./ProfileStack";
 
 const Tab = createBottomTabNavigator();
 
@@ -45,7 +49,7 @@ function Service() {
       />
       <Tab.Screen
         name="Transaction"
-        component={Home}
+        component={Transaction}
         options={{
           tabBarIcon: ({ color }) => {
             return <TransactionSvg color={color} />;
@@ -71,7 +75,7 @@ function Service() {
       />
       <Tab.Screen
         name="Budget"
-        component={Home}
+        component={BudgetStack}
         options={{
           tabBarIcon: ({ color }) => {
             return <PiaChartSvg color={color} />;
@@ -79,9 +83,10 @@ function Service() {
         }}
       />
       <Tab.Screen
-        name="Profile"
-        component={Home}
+        name="ProfileStack"
+        component={ProfileStack}
         options={{
+          title: "Profile",
           tabBarIcon: ({ color }) => {
             return <UserSvg color={color} />;
           },

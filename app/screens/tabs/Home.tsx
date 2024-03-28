@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <ScrollView
       style={{
-        paddingTop: 50,
+        paddingTop:Global.pad50,
         backgroundColor: Colors.light,
       }}
       showsVerticalScrollIndicator = {false}

@@ -2,6 +2,8 @@ import { Text, View, StyleSheet } from "react-native";
 import { useFonts } from "expo-font";
 import { NavigationContainer } from "@react-navigation/native";
 import Introduction from "./navigation/user/Introduction";
+import { BottomSheetModalProvider } from "@gorhom/bottom-sheet";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 export default function Main() {
   const [fontsLoaded, fontError] = useFonts({
@@ -16,8 +18,8 @@ export default function Main() {
   }
 
   return (
-    <NavigationContainer>
-      <Introduction />
-    </NavigationContainer>
+      <NavigationContainer>
+          <Introduction />
+      </NavigationContainer>
   );
 }

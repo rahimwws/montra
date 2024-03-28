@@ -3,7 +3,12 @@ import React from "react";
 import Colors from "../../../utils/styles/Colors";
 import { HandleHaptic } from "../../../utils/features/HandleHaptic";
 
-const SeeAll = () => {
+interface Props {
+  functions: any;
+  text: string;
+}
+
+const LittlePill = ({ text, functions }: Props) => {
   return (
     <TouchableOpacity
       style={{
@@ -23,10 +28,10 @@ const SeeAll = () => {
           fontFamily: "inter-sb",
         }}
       >
-        See All
+        {text}
       </Text>
     </TouchableOpacity>
   );
 };
 
-export default SeeAll;
+export default LittlePill;
